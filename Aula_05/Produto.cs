@@ -14,5 +14,19 @@
         private decimal Valor;
         private string Descricao;
 
+        public int getId()
+        {
+            return Id;
+        }
+
+        public decimal getValor()
+        {
+            return Valor;
+        }
+
+        public string getDescricao()
+        {
+            return Descricao;
+        }
     }
 }
