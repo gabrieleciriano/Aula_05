@@ -2,17 +2,19 @@
 {
     public sealed class Cliente
     {
-        public Cliente(int id, string nome, string telefone)
+        public Cliente(int id, string nome, string telefone, Endereco endereco)
         {
             Id = id;
             Nome = nome;
             Telefone = telefone;
+            Endereco = endereco;
 
         }
 
         private int Id;
         private string Nome;
         private string Telefone;
+        private Endereco Endereco;
 
 
         public int getId()
@@ -43,6 +45,16 @@
         public void setTelefone(string telefone)
         {
             Telefone = telefone;
+        }
+
+        public Endereco getEndereco()
+        {
+            return Endereco;
+        }
+
+        public void setEndereco(Endereco endereco)
+        {
+            Endereco = endereco;
         }
     }
 }
