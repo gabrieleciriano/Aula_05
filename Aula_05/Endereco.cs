@@ -2,13 +2,6 @@
 {
     public sealed class Endereco
     {
-        private string Rua;
-        private string Numero;
-        private string Bairro;
-        private string Cep;
-        private string Cidade;
-        private string Estado;
-
         public Endereco(string rua, string numero, string bairro, string cep, string cidade, string estado)
         {
             Rua = rua;
@@ -18,6 +11,14 @@
             Cidade = cidade;
             Estado = estado;
         }
+
+        private string Rua;
+        private string Numero;
+        private string Bairro;
+        private string Cep;
+        private string Cidade;
+        private string Estado;
+       
 
         public string getRua()
         {
@@ -76,6 +77,12 @@
         public void setEstado(string estado)
         {
             Estado = estado;
+        }
+
+        public string EnderecoCompleto()
+        {
+            return $"{Rua}, {Numero} Bairro: {Bairro} Cidade: {Cidade} / {Estado}";
+
         }
     }
 }

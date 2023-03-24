@@ -56,5 +56,10 @@
         {
             Endereco = endereco;
         }
+
+        public string ImprimirDadosCliente()
+        {
+            return $"Id: {Id} Nome: {Nome} Endereço: {Endereco.EnderecoCompleto()}";
+        }
     }
 }
